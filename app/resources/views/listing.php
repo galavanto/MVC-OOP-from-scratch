@@ -16,7 +16,7 @@
                                     Streetname
                                     <input type="text" name="streetname">
                                     Housenumber
-                                    <input type="text" name="Housenumber">
+                                    <input type="text" name="housenumber">
 
                                     Rooms
                                     <input type="number" min=0 name="rooms" value=1>
@@ -30,13 +30,18 @@
                                     <input type="number" min=0 name="livesquaremeter">
 
                                     Heating type
-                                    <select name="heatingstype">
+                                    <select name="heatingtype">
                                       <option value="cv">Central heating(Gas)</option>
                                       <option value="wood">Wood</option>
                                       <option value="heatpump">Heatpump</option>
                                       <option value="electric">Electric</option>
                                       <option value="none">None</option>
                                     </select> 
+
+                                    Sale price
+                                    <input type="number"  name="saleprice">
+                                    Description
+                                    <input type="test"  name="description">
                                 </div>
                                 <br>
                                 <input type="submit" value="Submit">

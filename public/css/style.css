@@ -136,6 +136,7 @@ body{
 }
 .all_listings{
     padding-left:20px;
+    allListings */
     display:flex;
     align-content: center;
     justify-content: flex-start;
@@ -180,6 +181,8 @@ body{
 .allListings{
     display:flex;
     justify-content: center;
+    display:grid;
+    grid-template-rows: auto;
 }
 
 /* Listing ubtton */
@@ -219,7 +222,8 @@ body{
 
 .centerContent{
     padding-top:10px;
-
+    display:grid;
+    grid-template-rows: auto;
     display:flex;
     justify-content: center;
 }

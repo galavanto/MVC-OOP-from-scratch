@@ -4,14 +4,12 @@
 class Listing extends Model{
 
 
-    public $wozwaarde;
-    public $rooms,$toilets,$heating,$heatingType,$streetName,$houseNumber,$city,$livesquaremeter,$propertysquaremeter;
+    // public $wozwaarde;
+    public $rooms,$toilets,$heating,$heatingType,$streetName,$houseNumber,$city,$livesquaremeter,$propertysquaremeter,$user_id,$private,$saleprice;
 
     
-    public function __construct($streetName,$houseNumber,$city){
-        $this->streetName = $streetName;
-        $this->houseNumber = $houseNumber;
-        $this->city = $city;
+    public function __construct(){
+
     }
 
     protected function _setRooms($rooms){

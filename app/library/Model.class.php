@@ -55,6 +55,7 @@ abstract class Model
         VALUES (" . $values . ");";
         
         $db = new Database();
+        var_dump($queryString);
         $query = $db->pdo->prepare($queryString);
 
 
