@@ -212,3 +212,34 @@ body{
     justify-content: center;
     align-items:center;
 }
+
+
+/* add listing page */
+
+
+.centerContent{
+    padding-top:10px;
+
+    display:flex;
+    justify-content: center;
+}
+
+
+.formStyling{
+    display:grid;
+    grid-template-columns:  auto auto;
+    row-gap:5px;
+    column-gap: 10px;
+}
+.formHeader{
+    display:flex;
+    justify-content: center;
+}
+
+.form_div{
+    background-color: lightgray;
+    padding:10px;
+    display:grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}

@@ -7,6 +7,8 @@ Route::get('/','HomepageController@home')->middleware(['checkLogged']);
 Route::get('/user/listings','HomepageController@listings');
 Route::get('/new/listing','HouseController@listing');
 
+// Adding new listing
+Route::post('/new/listing','HouseController@newListing');
 
 
 // Everything to do with the user
