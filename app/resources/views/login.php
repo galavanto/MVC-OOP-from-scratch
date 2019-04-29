@@ -3,13 +3,19 @@
 
 
     <div class="loginformcontainer">
+
         <form action="/login" method="POST">
           <div class="container">
             <div class="header">
               <h1>Login</h1>
             </div>
             
-
+            <?php
+                if(isset($_SESSION['error_login'])){
+                    echo '<div class="error">'.$_SESSION['errors'].'</div>';
+                    echo '<br/>';
+                }
+              ?>
 
                 <div class="loginformfield">
 

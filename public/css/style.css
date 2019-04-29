@@ -119,7 +119,9 @@ body{
     background-color:rgb(218, 216, 216);
 }
 
-
+.error{
+    color:red;
+}
 /* CARD FOR LISTING */
 .listing_card{
     margin-bottom:10px;

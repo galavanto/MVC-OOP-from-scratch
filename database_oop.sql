@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         localhost
 -- Server version:               5.7.24 - MySQL Community Server (GPL)
--- Server OS:                    Win64
--- HeidiSQL Version:             9.5.0.5332
+-- Server OS:                    Win32
+-- HeidiSQL Version:             9.5.0.5337
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -12,12 +12,12 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Dumping database structure for phpopdr1oop
+-- Dumping database structure for oop_php_mvc
 CREATE DATABASE IF NOT EXISTS `oop_php_mvc` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `oop_php_mvc`;
 
--- Dumping structure for table phpopdr1oop.houses
-CREATE TABLE IF NOT EXISTS `houses` (
+-- Dumping structure for table oop_php_mvc.listings
+CREATE TABLE IF NOT EXISTS `listings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `city` char(50) DEFAULT NULL,
   `rooms` int(11) DEFAULT NULL,
@@ -28,22 +28,20 @@ CREATE TABLE IF NOT EXISTS `houses` (
   `housenumber` text,
   `livesquaremeter` int(11) DEFAULT NULL,
   `propertysquaremeter` int(11) DEFAULT NULL,
-  `wozwaarde` int(255) DEFAULT NULL,
-  `tax` int(11) DEFAULT NULL,
+  `private` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `description` text,
+  `saleprice` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
-  KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
+  KEY `id` (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
 
--- Dumping data for table phpopdr1oop.houses: ~1 rows (approximately)
-/*!40000 ALTER TABLE `houses` DISABLE KEYS */;
-INSERT INTO `houses` (`id`, `city`, `rooms`, `toilets`, `heating`, `heatingtype`, `streetname`, `housenumber`, `livesquaremeter`, `propertysquaremeter`, `wozwaarde`, `tax`) VALUES
-	(51, 'Sustrum', 16, 15, 1, 'CV', 'Teichstrasse ', '9', 80, 1000, 25000000, 6800);
-/*!40000 ALTER TABLE `houses` ENABLE KEYS */;
-
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
+-- Data exporting was unselected.
+-- Dumping structure for table oop_php_mvc.users
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` char(50) DEFAULT NULL,
@@ -51,4 +49,9 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` char(120) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+
+-- Data exporting was unselected.
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

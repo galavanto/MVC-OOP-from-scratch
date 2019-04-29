@@ -26,14 +26,18 @@ class UserController{
         // trim all data
         
 
-        if($pwd !== $rpwd || strlen($pwd) < 2){
-            $session['error'] = array('danger','Password check didn\'t pass. sorry');
-            die('Password check didn\'t pass. sorry');
+        if($pwd !== $rpwd || strlen($pwd) < 4){
+            session_start();
+            $_SESSION['errors'] = 'Password check didn\'t pass.';
+            header('Location: /signup');
+            die();
         }else{
- 
+            
             if(count(User::checkEmail($email)) > 0 || count(User::checkUsername($username)) > 0){
-                $session['error'] = array('danger','Looks like you\'ve already have an account.');
-                die('Looks like you\'ve already have an account.');
+                session_start();
+                $_SESSION['errors'] = 'Looks like you already have an account.';
+                header('Location: /signup');
+                die();
             }else{
                 $user = new User();
                 $user->username = $username;
@@ -81,7 +85,9 @@ class UserController{
             header('Location: /');
             // $view = new View('homepage', 'Home');
         }else{
-            die('logging in went wrong');
+            session_start();
+            $_SESSION['error_login'] = 'Something went wrong with the login. Our apologies.';
+            header('Location: /signin');
         };
 
     }
