@@ -6,9 +6,9 @@ define('DBHOST','127.0.0.1');
 define('DBNAME','oop_php_mvc');
 define('DBUNAME','root');
 define('DBPASS','');
+define('DBPORT','3306');
 
-
-// Online DB - Example.bosweb
+// // Online DB - Example.bosweb
 // define('DBHOST', getenv("MYSQL_HOST"));
 // define('DBNAME',getenv("MYSQL_DATABASE"));
 // define('DBUNAME',getenv("MYSQL_USERNAME"));

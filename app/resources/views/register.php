@@ -8,10 +8,10 @@
             
             <p>Please fill in this form to create an account.</p>
               <?php
-                if(isset($_SESSION['errors'])){
-                    echo '<div class="error">'.$_SESSION['errors'].'</div>';
-                    echo '<br/>';
-                }
+                // if(isset($_SESSION['errors'])){
+                //     echo '<div class="error">'.$_SESSION['errors'].'</div>';
+                //     echo '<br/>';
+                // }
               ?>
                 <div class="signupformfield">
                     <label for="username"><b>Username</b></label>

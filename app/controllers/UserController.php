@@ -52,7 +52,7 @@ class UserController{
 
                     // login user
                     if(User::checkCredentials(filter_var($_POST['username'],FILTER_SANITIZE_STRING),filter_var($_POST['psw'],FILTER_SANITIZE_STRING))){
-                        $view = new View('homepage', 'Home');
+                        header('Location: /');
                     }else{
                         die('logging in went wrong');
                     };

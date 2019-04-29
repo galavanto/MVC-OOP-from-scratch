@@ -11,10 +11,10 @@
             </div>
             
             <?php
-                if(isset($_SESSION['error_login'])){
-                    echo '<div class="error">'.$_SESSION['errors'].'</div>';
-                    echo '<br/>';
-                }
+                // if(isset($_SESSION['error_login'])){
+                //     echo '<div class="error">'.$_SESSION['errors'].'</div>';
+                //     echo '<br/>';
+                // }
               ?>
 
                 <div class="loginformfield">
