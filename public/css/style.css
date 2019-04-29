@@ -1,0 +1,206 @@
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size:16px;
+}
+
+
+/* Register */
+.signupformcontainer{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/public/images/background-signup.jpeg");
+    color:white;
+}
+.signupformcontainer a{
+    color: #f7d35dcb;
+}
+
+.container{
+    background-color: rgba(51, 102, 153, 0.9);
+    border-radius:5px;
+    padding:10px;
+}
+.signupformfield{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 1em;
+}
+
+/* Login */
+.loginformcontainer{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/public/images/background-signup.jpeg");
+    color:white;
+}
+.loginformfield{
+    display:grid;
+    grid-template-columns: auto ;
+    grid-row-gap: 1em;
+}
+.loginbtn{
+    width:100%;
+    height:60px;
+    font-size: 16px;
+}
+.header{
+    display:flex;
+    justify-content: center;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:grid;
+    grid-template-columns: 10% auto auto;
+    width:100%;
+    height:50px;
+    background-color: #407474;
+}
+
+
+.rightSide{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    float:right;
+}
+.leftSide{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    float:right;
+}
+.loggedInLinks{
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.leftSideLinks{
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration: none;
+    color:white;
+}
+.brand{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration: none;
+    color: rgb(255, 206, 193);
+}
+
+/* Listing */
+.listing_container{
+    display:grid;
+    grid-template-columns: 100px auto 100px;
+    margin-top:10px;
+}
+.listing_visual_container{
+ 
+    display:grid;
+    grid-template-columns: 300px auto;
+}
+.infoMenu{
+    background-color:grey;
+}
+
+
+/* CARD FOR LISTING */
+.listing_card{
+    width:500px;
+    min-height:400px;
+}
+.card_background{
+
+    background:whitesmoke;
+    border-radius:7px;
+}
+.card_holder{
+    padding:10px;
+    display:grid;
+    grid-template-rows: 100px 250px 50px;
+}
+.all_listings{
+    padding-left:20px;
+    display:flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+.card_header{
+    display:grid;
+    grid-template-columns: 200px auto;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px;
+    margin-bottom:10px;
+}
+.card_body{
+    width:100%;
+    border-top:1px  rgba(180, 180, 180,0.8) solid;
+    border-bottom:1px rgba(180, 180, 180,0.8) solid;
+}
+.card_footer{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.info_listing{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card_photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+}
+.user_info_listing{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Listing ubtton */
+
+.new_listing_button{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:30px;
+    background-color:orange;
+    height: 60px;
+    border-radius: 13px;
+    display:grid;
+    grid-template-columns: 20% auto;
+    border: 1px solid grey;
+}
+.new_listing_button:hover{
+    background-color:rgb(255, 195, 82);
+    border: 1px solid rgb(189, 189, 189);
+}
+.add_icon{
+    color:white;
+    font-size:40px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.text_listing_button{
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}

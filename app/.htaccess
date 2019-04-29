@@ -1,0 +1,3 @@
+# htaccess for app folder. to shield it
+
+Options -Indexes
