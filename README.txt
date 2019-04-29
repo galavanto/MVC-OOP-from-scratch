@@ -1,4 +1,6 @@
 
+##### Stappen voor installatie
+
 
 User login
 
@@ -60,9 +62,9 @@ Stappen:
 2. Host instellen 
 
 
+======
 
-
-
+------
 DATABASE IMPORTEREN
 
 

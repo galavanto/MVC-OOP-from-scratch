@@ -114,7 +114,9 @@ body{
     grid-template-columns: 300px auto;
 }
 .infoMenu{
-    background-color:grey;
+    border:1px grey solid;
+    border-radius:10px;
+    background-color:rgb(218, 216, 216);
 }
 
 
