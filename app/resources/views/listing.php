@@ -28,8 +28,17 @@
 
                                     Liveable area size
                                     <input type="number" min=0 name="livesquaremeter">
-                                </div>
 
+                                    Heating type
+                                    <select name="heatingstype">
+                                      <option value="cv">Central heating(Gas)</option>
+                                      <option value="wood">Wood</option>
+                                      <option value="heatpump">Heatpump</option>
+                                      <option value="electric">Electric</option>
+                                      <option value="none">None</option>
+                                    </select> 
+                                </div>
+                                <br>
                                 <input type="submit" value="Submit">
                             </form> 
                         </div>
