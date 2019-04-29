@@ -67,7 +67,12 @@ Onder in deze file kunt u een v-host toevoegen
 
 
 
-User login
+
+# Features/oefeningen
+
+
+
+### SUser login
 
 
 Wachtwoorden worden ge-encrypt aan de hand van bcrypt.
@@ -75,13 +80,13 @@ Alle data word in de sessie opgeslagen op de server.
 Bij loguit word de sessie vernietigt.
 
 
-CSRF
+### CSRF
 
 Bij inlog maak ik een token aan met een token expiry
 Bij uitlog word deze vernietigt.
 Als iemand een request doet, check ik of deze route alleen voor ingelogde mensen in. Zo ja, kijken ik of de token niet geexpired is. --- Expired of niet ingelogt ? opniew inloggen.
 
-XSS
+### XSS
 
 Weergave van userinput word gedaan aan de hand van: echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 
@@ -91,7 +96,7 @@ Ook is de server ingesteld volgens de volgende settings: https://github.com/OWAS
 
 
 
-Database request
+### Database request
 
 In de models kan je aangeven of er protected columns zijn. Zoja, dan worden deze nooit meegenomen! bij find,where of all zijn deze
 columns niet aanwezig.
@@ -105,7 +110,7 @@ Bijvoorbeeld, standaard word het wachtwoord nooit meegegeven naar de controller.
 
 
 
-Verbeteringen:
+##### Verbeteringen:
 
 Ik wil graag meer helpers schrijven voor het uitvoeren van sanitizing van user input.
 Daarnaast moet ik mijn queries beter preparen aan de hand van PDO. Dit zal veel input schelen.
