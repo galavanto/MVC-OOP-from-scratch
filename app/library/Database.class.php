@@ -9,7 +9,7 @@
             // Het aanmaken van een PDO object -> database verbinding.
             try
             {
-                $this->pdo = new PDO('mysql:host='. DBHOST .';dbname=' . DBNAME, DBUNAME, DBPASS);
+                $this->pdo = new PDO('mysql:host='. DBHOST .':'.DBPORT.';dbname=' . DBNAME, DBUNAME, DBPASS);
                 
             }
             catch (PDOException $e)

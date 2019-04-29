@@ -13,8 +13,8 @@
 
 
 -- Dumping database structure for oop_php_mvc
-CREATE DATABASE IF NOT EXISTS `oop_php_mvc` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `oop_php_mvc`;
+
+USE `5494dcafc233c4f1`;
 
 -- Dumping structure for table oop_php_mvc.listings
 CREATE TABLE IF NOT EXISTS `listings` (

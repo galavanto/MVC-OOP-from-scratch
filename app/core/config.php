@@ -8,6 +8,14 @@ define('DBUNAME','root');
 define('DBPASS','');
 
 
+// Online DB - Example.bosweb
+// define('DBHOST', getenv("MYSQL_HOST"));
+// define('DBNAME',getenv("MYSQL_DATABASE"));
+// define('DBUNAME',getenv("MYSQL_USERNAME"));
+// define('DBPASS',getenv("MYSQL_PASSWORD"));
+// define('DBPORT',getenv("MYSQL_PORT"));
+
+
 // File structure
 define('__ROOT__', dirname(dirname(dirname(__FILE__)))   ); 
 define('__APP__', dirname(dirname(dirname(__FILE__).'/app'))   ); 
