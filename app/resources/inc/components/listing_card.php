@@ -10,7 +10,8 @@
                                         PHOTO
                                     </div>
                                     <div class="card_descripter">
-                                        <h3>&euro; 150.000</h3><br>
+                                        <!-- On linux we can use money_format. -->
+                                        <h3>&euro; <?php echo $listing['saleprice'] ?></h3><br>
                                         <?php echo $listing['streetname'] . " " . $listing['housenumber'] ?><br>
                                         <?php echo $listing['city'] ?><br>
 

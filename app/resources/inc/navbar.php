@@ -3,7 +3,7 @@
 </div>
     <div class="navbar">
         <div class="brand">
-            <a href="/" class="brand">Gunda</a>
+            <a href="/" class="brand">Fundaar</a>
         </div>
         <div class="leftSide">
             <a href="/" class="leftSideLinks">Home</a>
