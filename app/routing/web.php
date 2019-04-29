@@ -2,7 +2,7 @@
 
 
 
-Route::get('/','HomepageController@home');
+Route::get('/','HomepageController@home')->middleware(['checkLogged']);
 
 Route::get('/user/listings','HomepageController@listings');
 Route::get('/new/listing','HouseController@listing');
@@ -21,4 +21,4 @@ Route::get('/logout','UserController@logout');
 
 
 // Profile
-Route::get('/user','HomepageController@profile');
+Route::get('/user','HomepageController@profile')->middleware(['checkLogged']);

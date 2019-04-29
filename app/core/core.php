@@ -22,9 +22,10 @@
 
 
 
+    // Initiating router
     $router = new Router($_SERVER['REQUEST_URI']);
  
     $router->figureOutController();
     
-    // var_dump($router->sanitizedUrl);
+
 ?>

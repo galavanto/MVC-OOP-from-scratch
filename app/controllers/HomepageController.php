@@ -15,7 +15,7 @@ class HomepageController{
 
     public function listings(){
         // Getting all listings from user
-        $results = House::userListing();
+        $results = Listing::userListing();
         if(count($results) > 0){
             $view = new View('listings', 'Listings');
             $view->assign('listings',$results);

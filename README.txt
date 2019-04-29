@@ -44,6 +44,10 @@ Verbeteringen:
 Ik wil graag meer helpers schrijven voor het uitvoeren van sanitizing van user input.
 Daarnaast moet ik mijn queries beter preparen aan de hand van PDO. Dit zal veel input schelen.
 
+Middleware is in basis geimplementeerd. Echter doet het programma nog niets met de middleware bij de request cycle.
+
+
+
 
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

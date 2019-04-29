@@ -1,7 +1,7 @@
 <?php
 
 
-class House extends Model{
+class Listing extends Model{
 
 
     public $wozwaarde;
@@ -118,7 +118,7 @@ class House extends Model{
     public static function userListing(){
         session_start();
         if(isset($_SESSION['user'])){
-            $results = House::whereListing('user_id',$_SESSION['user']['id']);
+            $results = Listing::whereListing('user_id',$_SESSION['user']['id']);
             return $results;
         }else{
             die('something went wrong');

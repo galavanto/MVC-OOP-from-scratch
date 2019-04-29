@@ -87,7 +87,7 @@ class UserController{
 
     public function logout(){
         if(Auth::logout()){
-            $houses = House::all();
+            $houses = Listing::all();
             $view = new View('homepage', 'Home');
         }else{
             die('something went wrong');
