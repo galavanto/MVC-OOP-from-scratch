@@ -6,6 +6,7 @@
 
 
         public function __construct(){
+            // Het aanmaken van een PDO object -> database verbinding.
             try
             {
                 $this->pdo = new PDO('mysql:host='. DBHOST .';dbname=' . DBNAME, DBUNAME, DBPASS);
@@ -13,7 +14,7 @@
             }
             catch (PDOException $e)
             {
-                exit('Error Connecting To d');
+                exit('Error Connecting To database');
             }
         }
 

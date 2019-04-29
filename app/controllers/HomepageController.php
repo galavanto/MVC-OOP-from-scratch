@@ -8,7 +8,9 @@ class HomepageController{
 
         $view = new View('homepage', 'Home');
         $user = User::find(6);
+        $listings = Listing::all();
         $view->assign('user',$user);
+        $view->assign('listings',$listings);
     }
     
 

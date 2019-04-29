@@ -1,16 +1,4 @@
-<?php
-                 if(isset($listings)){
-                    foreach($listings as $listing){
-                        
 
-                        echo $listing['city']; 
-                    }
-                }else{
-                    echo "No listings yet.";
-                }
-
-
-                ?>
 
 
                 <div class="listing_card">
@@ -22,7 +10,7 @@
                                         PHOTO
                                     </div>
                                     <div class="card_descripter">
-                                        <h3>150.000</h3><br>
+                                        <h3>&euro; 150.000</h3><br>
                                         <?php echo $listing['streetname'] . " " . $listing['housenumber'] ?><br>
                                         <?php echo $listing['city'] ?><br>
 

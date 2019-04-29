@@ -124,14 +124,13 @@ body{
     min-height:400px;
 }
 .card_background{
-
     background:whitesmoke;
     border-radius:7px;
 }
 .card_holder{
     padding:10px;
     display:grid;
-    grid-template-rows: 100px 250px 50px;
+    grid-template-rows: auto 250px 50px;
 }
 .all_listings{
     padding-left:20px;

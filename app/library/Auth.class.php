@@ -5,6 +5,7 @@
 class Auth{
 
     public static function id(){
+        // Getting id from logged in user
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
@@ -15,6 +16,7 @@ class Auth{
         }
     }
     public static function username(){
+        // Getting username of logged in user
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
@@ -25,6 +27,7 @@ class Auth{
         }
     }
     public static function loggedIn(){
+        // Check if user is logged in or not
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
@@ -36,6 +39,7 @@ class Auth{
     }
 
     public static function logout(){
+        // Log out a user
         session_start();
         $_SESSION = array();
         if (session_status() == PHP_SESSION_ACTIVE){ 
