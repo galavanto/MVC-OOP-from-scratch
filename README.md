@@ -8,9 +8,8 @@ Stappen:
 2. Host instellen 
 
 
-======
 
-## 1 DATABASE IMPORTEREN
+## DATABASE IMPORTEREN
 
 
 Als de SQL file die in de root staat uitgevoerd word, zal er een database genaamd oop_php_mvc aangemaakt worden.
@@ -20,7 +19,7 @@ Listings en users.
 
 
 
-## 2 HOST INSTELLEN
+## HOST INSTELLEN
 
 
 Hoe een v host instellen
