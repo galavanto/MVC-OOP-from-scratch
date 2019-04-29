@@ -18,50 +18,15 @@
 
                 <div class="all_listings">
                 <?php 
-                // Loop through all listings
+                // Geef alle listings weer
                     if(isset($listings)){
                         foreach($listings as $listing){
-                        ?>
-                            <div class="listing_card">
-                                <div class="card_background">
-                                    <div class="card_holder">
-                                        <div class="card_header">
-                                            <div class="card_photo">
-                                            PHOTO
-                                            </div>
-                                            <div class="card_descripter">
-                                                <?php echo $listing['streetname'] . ' ' . $listing['housenumber'] . '<br>'; ?>
-                                                <?php echo $listing['city']."<br>"; ?>
-                                                POSTALCODE<br>
-                                                SALESPRICE
-                                            </div>
-                                        </div>
-                                        <div class="card_body">
-                                            <div class="card_description">
-                                            DESCRIPTION
-                                            </div>
-                                        </div>
-                                        <div class="card_footer">
-                                            <div class="user_info_listing">
-                                                <small>Posted by: <?php echo $listing['username'] ?></small>
-                                            </div>
-                                            <div class="info_listing">
-                                                <small>LISTED AT: DATE DATE DATE</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <?php
-                        // End of foreach
+                            include __APP__.'/resources/inc/components/listing_card.php';
                         }
-                    // If there are no listing then..
                     }else{
-                        echo "no listings";
+                        echo "No listings found";
                     }
-                    
-                    ?>
+                ?>
                 </div>
 
             </div>

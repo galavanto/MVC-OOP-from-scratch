@@ -118,6 +118,7 @@ class Listing extends Model{
     public static function userListing(){
         session_start();
         if(isset($_SESSION['user'])){
+        
             $results = Listing::whereListing('user_id',$_SESSION['user']['id']);
             return $results;
         }else{
@@ -130,9 +131,8 @@ class Listing extends Model{
 
         $db = new Database();
         // check if integer
-        $query = $db->pdo->prepare("SELECT *, users.username FROM " . $primary_table . " INNER JOIN users ON houses.user_id = users.id WHERE houses." . $firstParam . "='" . (int) $secondParam . "' ");
+        $query = $db->pdo->prepare("SELECT *, users.username FROM " . $primary_table . " INNER JOIN users ON listings.user_id = users.id WHERE listings." . $firstParam . "='" . (int) $secondParam . "' ");
 
-        // return "SELECT * FROM ".$primary_table." where ".$firstParam."= '%".$secondParam."%'";
         $query->execute();
         unset($db);
         return $query->fetchAll();

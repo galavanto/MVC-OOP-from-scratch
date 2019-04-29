@@ -78,7 +78,8 @@ class UserController{
 
         
         if(User::checkCredentials(filter_var($_POST['username'],FILTER_SANITIZE_STRING),filter_var($_POST['psw'],FILTER_SANITIZE_STRING))){
-            $view = new View('homepage', 'Home');
+            header('Location: /');
+            // $view = new View('homepage', 'Home');
         }else{
             die('logging in went wrong');
         };
@@ -88,7 +89,7 @@ class UserController{
     public function logout(){
         if(Auth::logout()){
             $houses = Listing::all();
-            $view = new View('homepage', 'Home');
+            header('Location: /');
         }else{
             die('something went wrong');
         };

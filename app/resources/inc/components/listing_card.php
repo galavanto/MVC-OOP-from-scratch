@@ -20,9 +20,7 @@
                                 <!-- Body -->
                                 <div class="card_body">
                                     <div class="card_description">
-                                    
-                                            DESCRIPTION
-                                   
+                                           <?php echo $listing['description'] ?>
                                     </div>
                                 </div>
                                 <!-- Footer -->
@@ -31,7 +29,7 @@
                                        <small></small>
                                     </div>
                                     <div class="info_listing">
-                                        <small>LISTED AT: DATE DATE DATE</small>
+                                        <small>listed at: <?php echo(date("d-m-Y",strtotime($listing['created_at'])));?></small>
                                     </div>
                                 </div>
                             </div>

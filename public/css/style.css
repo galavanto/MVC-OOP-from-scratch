@@ -120,6 +120,8 @@ body{
 
 /* CARD FOR LISTING */
 .listing_card{
+    margin-bottom:10px;
+    margin-top:10px;
     width:500px;
     min-height:400px;
 }
@@ -171,7 +173,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+.card_description{
+    padding-top:10px;
+}
 
+.allListings{
+    display:flex;
+    justify-content: center;
+}
 
 /* Listing ubtton */
 

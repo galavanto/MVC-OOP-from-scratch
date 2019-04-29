@@ -1,7 +1,7 @@
 <?php
 
 
-
+// Middleware doesn't do anything yet..
 Route::get('/','HomepageController@home')->middleware(['checkLogged']);
 
 Route::get('/user/listings','HomepageController@listings');
@@ -21,4 +21,5 @@ Route::get('/logout','UserController@logout');
 
 
 // Profile
+// Middleware doesn't do anything yet..
 Route::get('/user','HomepageController@profile')->middleware(['checkLogged']);
