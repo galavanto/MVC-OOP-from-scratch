@@ -12,10 +12,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Dumping database structure for oop_php_mvc
-
-USE `5494dcafc233c4f1`;
-
 -- Dumping structure for table oop_php_mvc.listings
 CREATE TABLE IF NOT EXISTS `listings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

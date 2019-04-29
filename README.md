@@ -12,7 +12,12 @@ Stappen:
 ## DATABASE IMPORTEREN
 
 
-Als de SQL file die in de root staat uitgevoerd word, zal er een database genaamd oop_php_mvc aangemaakt worden.
+De SQL die in de root van het project staat, maakt 2 tables aan.
+ - Run de SQL in een lege database naar keuze.
+ - Verander de database naam / host / poort / username / password in ```config.php ```
+```
+webroot/app/core/config.php
+```
 Hierin zullen 2 tables zijn:
 Listings en users.
 
@@ -71,7 +76,7 @@ Onder in deze file kunt u een v-host toevoegen
 
 
 
-### SUser login
+### User login
 
 
 Wachtwoorden worden ge-encrypt aan de hand van bcrypt.
