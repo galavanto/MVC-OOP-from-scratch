@@ -18,6 +18,7 @@ De SQL die in de root van het project staat, maakt 2 tables aan.
 ```
 webroot/app/core/config.php
 ```
+
 Hierin zullen 2 tables zijn:
 Listings en users.
 

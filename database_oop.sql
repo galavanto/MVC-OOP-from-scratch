@@ -12,7 +12,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Dumping structure for table oop_php_mvc.listings
+-- Dumping structure for table 
 CREATE TABLE IF NOT EXISTS `listings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `city` char(50) DEFAULT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `listings` (
 ) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
 
 -- Data exporting was unselected.
--- Dumping structure for table oop_php_mvc.users
+-- Dumping structure for table
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` char(50) DEFAULT NULL,
